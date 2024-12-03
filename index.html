@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="gambar/k.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <div>
+                <h2 class="title">CompShop</h2>
+            </div>
+            
+            <div class="nav">
+                <div class="huruf">
+                    <a href="#" class="n">Home</a>
+                    <a href="#produk" class="n">Produk</a>
+                    <a href="#tentang" class="n">Tentang Kami</a>
+                    <a href="#footer" class="n">Kontak</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section>
+        <div class="h2">
+            <div class="gambar">
+                <img src="gambar/k.jpeg" alt="ikon">
+            </div>
+            <h2  id="produk" style="position: relative; top: 100px; margin-bottom: 180px; text-align: center; font-size: 50px;">Selamat Datang di CompShop</h2>
+        </div>
+
+        <div class="Kotak">
+            <!-- Baris pertama dengan box -->
+             <div class="row">
+                 <div class="box">
+                     <div class="produk"><img src="gambar/mosepad.webp" alt="mousepad"></div>
+                     <div class="ab">
+                         <h3>MousePad</h3>
+                         <p>Rp.25.000</p>
+                     </div>
+                     <button class="btn">Tambah Ke Keranjang</button>
+                 </div>
+                 
+                 <div class="box">
+                     <div class="produk"><img src="gambar/l.jpg" alt="mouse"></div>
+                     <div class="ab">
+                        <h3>Mouse Gaming</h3>
+                        <p>Rp.150.000</p>
+                    </div>
+                    <button class="btn">Tambah Ke Keranjang</button>
+                </div>
+                
+                <div class="box">
+                    <div class="produk"><img src="gambar/2.png" alt="keyboard"></div>
+                    <div class="ab">
+                        <h3>Keyboard Bluetooth</h3>
+                        <p>Rp.150.000</p>
+                    </div>
+                    <button class="btn">Tambah Ke Keranjang</button>
+                </div>
+            </div>
+            
+        
+            <!-- Baris kedua dengan boxB -->
+             <div class="row">
+
+                 <div class="boxB">
+                     <div class="produk"><img src="gambar/softace.jpg" alt="softcase Laptop"></div>
+                    <div class="ab">
+                        <h3>Spftcase Laptop</h3>
+                        <p>Rp.30.000</p>
+                    </div>
+                    <button class="btn">Tambah Ke Keranjang</button>
+                </div>
+
+                <div class="boxB">
+                    <div class="produk"><img src="gambar/d.webp" alt="headphone"></div>
+                    <div class="ab">
+                        <h3>Headphone</h3>
+                        <p>Rp.80.000</p>
+                    </div>
+                    <button class="btn">Tambah Ke Keranjang</button>
+                </div>
+                
+                <div class="boxB">
+                    <div class="produk"><img src="gambar/t.jpeg" alt="Riser Laptop"></div>
+                    <div class="ab">
+                        <h3>Riser/Laptop Stand</h3>
+                        <p>Rp.200.000</p>
+                    </div>
+                    <button class="btn">Tambah Ke Keranjang</button>
+                </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="tentang">
+        <div class="tentang-kami">
+            <h2>Tentang Kami</h2>
+            <p>
+                CompShop hadir sebagai solusi terdepan dalam memenuhi kebutuhan aksesori laptop profesional. Kami tidak sekadar menjual produk, tetapi menghadirkan pengalaman digital yang lebih baik melalui aksesori berkualitas tinggi.Dalam era digital yang semakin kompleks, kami memahami bahwa laptop bukan sekadar perangkat elektronik, melainkan jendela utama produktivitas, kreativitas, dan konektivitas Anda. Setiap aksesori yang kami tawarkan dirancang untuk meningkatkan performa, kenyamanan, dan perlindungan perangkat Anda.
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+    <div class="footer" id="footer">
+        <h3>Hubungi Kami</h3>
+                <a href="https://wa.me/6287833524624" class="o">Telepon: +62 878-3352-4624</a>
+                <br><br>
+                <a href="mailto:customer@compshop.id" class="o">Email: customer@compshop.id</a>
+        <p> &copy; 2024 Toko Online Flexbox - Semua Hak Dilindungi</p>
+    </div>
+    </footer>
+</body>
+
+<script>
+    // Ambil semua elemen dengan kelas .btn
+    const buttons = document.querySelectorAll('.btn');
+
+    // Tambahkan event listener ke setiap tombol
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Tampilkan alert saat tombol diklik
+            alert('Produk berhasil ditambahkan ke keranjang!');
+        });
+    });
+</script>
+
+</html>
